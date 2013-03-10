@@ -15,7 +15,8 @@ shinyServer(function(input, output) {
     # generate an rnorm distribution and plot it
     #dist <- rnorm(input$obs)
     dist <- read.csv("data.csv",header=T) 
-    plot(dist[1:input$obs], dist[1:input$obs])
+    attach(dist)
+    plot (Date, Ukraine)
   })
   
 })

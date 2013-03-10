@@ -4,7 +4,7 @@ library(shiny)
 shinyUI(pageWithSidebar(
   
   # Application title
-  headerPanel("Hello Shiny!"),
+  headerPanel("Influenza Spreading"),
   
   # Sidebar with a slider input for number of observations
   sidebarPanel(
@@ -12,7 +12,7 @@ shinyUI(pageWithSidebar(
                 "Number of observations:", 
                 min = 1, 
                 max = 20, 
-                value = 10)
+                value = 1)
   ),
   
   # Show a plot of the generated distribution
